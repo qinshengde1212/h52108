@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.at-item {
+  color: #3079ed;
+  animation-name: focus-in-contract;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes focus-in-contract {
+  0%{
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100%{
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+    </style>
 </head>
 <body>
-    <h1>首页</h1>
+    <div class='at-container'>
+        <h1 class='at-item'>Animation
+        </h1>
+      </div>
 </body>
 </html>
